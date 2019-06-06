@@ -1,5 +1,5 @@
 import csv
-included_cols = [1]  #ensure I get the second column from the csv file
+included_cols = [0,1]  #ensure I get the second column from the csv file
 
 #Part 1: Get total number of months
 total_num_months = 0 #Total number of months in the dataset
@@ -39,4 +39,7 @@ print("total number of months: " + str(total_num_months))
 print("Net Total Profit/Loss: " + str(total_profit))
 print("Total differences are: " + str(total_diff))
 print("Average change: " + str(total_diff/85))
+
+
+
 
