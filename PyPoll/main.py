@@ -14,8 +14,9 @@ def display():
     for r in results:
         votes=r[1]
         name = r[0]
-        percentage = round((votes/total_votes)*100,3)
+        percentage = f'{round(votes/total_votes,3)*100:.3f}'
         print(f'{name}: {percentage}% ({votes})')
+        #print(f'{votes:.2f}')
     print('-'*27)
     print(f'Winner: {results[0][0]}')
     print('-'*27)
@@ -29,7 +30,7 @@ def display():
     for r in results:
         votes=r[1]
         name = r[0]
-        percentage = f'{(votes/total_votes)*100:3f}'
+        percentage = f'{round(votes/total_votes,3)*100:.3f}'
         file.write(f'{name}: {percentage}% ({votes}) \n')
     file.write('-'*27 +'\n')
     file.write(f'Winner: {results[0][0]} \n')
